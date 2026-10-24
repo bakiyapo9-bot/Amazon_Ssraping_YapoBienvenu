@@ -1,7 +1,7 @@
 import sqlite3
 from config import DATA_DIR
 
-# La base sera créée automatiquement dans le dossier data.
+
 DB_PATH = DATA_DIR / "datalab.db"
 
 

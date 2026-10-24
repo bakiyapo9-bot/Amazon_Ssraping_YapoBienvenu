@@ -3,7 +3,6 @@
 Projet d'extraction de données (Scraping) Amazon structuré selon une architecture modulaire MVC (Modèle-Vue-Contrôleur).
 
 # Architecture du projet
-
 Amazon_Scrapping/
 │
 ├── README.md

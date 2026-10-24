@@ -5,7 +5,6 @@ from app.scraper.driver import creer_driver
 from app.scraper.parsing import extraire_produits
 
 
-# Racine du projet : dossier contenant main.py
 BASE_DIR = Path(__file__).resolve().parents[2]
 
 
@@ -36,7 +35,7 @@ def scraper_produits(url):
         with open(fichier_html, "w", encoding="utf-8") as fichier:
             fichier.write(html)
 
-        # 5. Extraire les produits
+      
         produits = extraire_produits(html)
 
         print("\nScraping terminé !")

@@ -180,7 +180,7 @@ class AmazonScrapingApp(ctk.CTk):
         self.url.insert(0, "https://www.amazon.fr/s?k=iphone")
 
         self.btn_scraping = ctk.CTkButton(
-            formulaire, text="▶  Démarrer la collecte", height=44,
+            formulaire, text="Démarrer la collecte", height=44,
             fg_color=BLEU, hover_color=BLEU_SURVOL,
             command=self.demarrer_scraping,
         )
@@ -229,7 +229,7 @@ class AmazonScrapingApp(ctk.CTk):
         self.progression.stop()
         self.progression.configure(mode="determinate")
         self.progression.set(0 if erreur else 1)
-        self.btn_scraping.configure(state="normal", text="▶  Démarrer la collecte")
+        self.btn_scraping.configure(state="normal", text=" Démarrer la collecte")
 
         if erreur:
             self.statut.configure(text="La collecte a échoué.", text_color=ROUGE)
@@ -330,8 +330,8 @@ class AmazonScrapingApp(ctk.CTk):
                 bloc, text=str(chemin), text_color=GRIS, wraplength=700
             ).pack(anchor="w", padx=16, pady=(0, 14))
 
-        self.bouton("💾  Enregistrer les CSV", self.exporter_csv)
-        self.bouton("📁  Ouvrir le dossier des données", self.ouvrir_dossier)
+        self.bouton(" Enregistrer les CSV", self.exporter_csv)
+        self.bouton(" Ouvrir le dossier des données", self.ouvrir_dossier)
         ctk.CTkLabel(
             self.zone,
             text="Base SQLite : data/datalab.db. Les exports CSV restent disponibles.",

@@ -1,10 +1,9 @@
-# views/console_view.py
 
 def afficher_produits(produits):
 
     if not produits:
         print(
-            "\nAucun produit. "
+            "\nAucun produit."
             "Lance d'abord le scraping."
         )
         return

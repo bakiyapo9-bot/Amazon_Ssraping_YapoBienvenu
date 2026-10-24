@@ -4,9 +4,7 @@ from bs4 import BeautifulSoup
 
 
 def extraire_produits(html):
-    """
-    Analyse le HTML et extrait les informations des produits.
-    """
+    
 
     soup = BeautifulSoup(html, "html.parser")
 
